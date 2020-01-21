@@ -6,6 +6,8 @@ Neo got the secret map which tells where the Frodo's nest egg. This secret map i
 3. Both of map 1 and map 2 is encoded in the form of the integer array.
 4. The encoded array is the array of the value of the binary number which is converted a wall("#") to 1, and a blank(" ") to 0 for each row of the square.
 
+![Alt text](./secret8.png)
+
 To help Neo get the Frodo's nest egg, develop the program decoding the secret map.
 
 ## input
