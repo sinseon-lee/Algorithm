@@ -1,13 +1,13 @@
 # Decoding Function
 def decoder(n, arr1, arr2):
-    arr1_converted = []
-    arr2_converted = []
+    arr1Converted = []
+    arr2Converted = []
     
     # convert number to binary array
     for i in arr1:
-        arr1_converted.append(converter(i, n))
+        arr1Converted.append(converter(i, n))
     for i in arr2:
-        arr2_converted.append(converter(i, n))
+        arr2Converted.append(converter(i, n))
 
     # check there is a wall or not using OR(|) command
     array = []
@@ -15,7 +15,7 @@ def decoder(n, arr1, arr2):
         string = ""
 
         for j in range(n):
-            element = arr1_converted[i][j] | arr2_converted[i][j]
+            element = arr1Converted[i][j] | arr2Converted[i][j]
             if (element == 0):
                 string += " "
             else:
@@ -44,15 +44,15 @@ def converter(num, n):
     return array
 
 # Test 1
-n_test1 = 5
-arr1_test1 = [9, 20, 28, 18, 11]
-arr2_test1 = [30, 1, 21, 17, 28]
+n = 5
+arr1 = [9, 20, 28, 18, 11]
+arr2 = [30, 1, 21, 17, 28]
 
-print(decoder(n_test1, arr1_test1, arr2_test1))
+print(decoder(n, arr1, arr2))
 
 # Test 2
-n_test2 = 6
-arr1_test2 = [46, 33, 33 ,22, 31, 50]
-arr2_test2 = [27 ,56, 19, 14, 14, 10]
+n = 6
+arr1 = [46, 33, 33 ,22, 31, 50]
+arr2 = [27 ,56, 19, 14, 14, 10]
 
-print(decoder(n_test2, arr1_test2, arr2_test2))
+print(decoder(n, arr1, arr2))
