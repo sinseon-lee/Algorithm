@@ -5,3 +5,6 @@
 
 2. The Darts
 - python 3.7.4 : Clear on Jan 22 2020
+
+3. Cache
+- python 3.7.4 : Clear on Jan 23 2020
