@@ -1,17 +1,21 @@
+# Calculate the optimal time
 def schedule(n, t, m, timetable):
     departureTimes = [540]
 
+    # make a list of departure times
     for i in range(n - 1):
         departureTimes.append(departureTimes[-1] + t)
+    # remember the last departure time for 
     lastDepartureTime = departureTimes[-1]
 
+    # make HH:MM to minute(integer)
     for i in range(len(timetable)):
         timetable[i] = timeToInteger(timetable[i])
     
     timetable.sort()
 
     queues = []
-
+    # make a list of the information of the crew's shuttle allocation 
     while (len(departureTimes) != 0 and len(timetable) != 0):
         departureTime = departureTimes[0]
         queue = []
@@ -28,23 +32,26 @@ def schedule(n, t, m, timetable):
         queues.append(queue)
         departureTimes = departureTimes[1:]
 
+    # if the last shuttle is not full, optimal time is the last departure time
     if (len(queues[-1]) != m):
         optimalTime = lastDepartureTime
+    # if the last shuttle is full, optimal time is the last crew's arrival time - 1
     else:
-        optimalTime = max(queues[-1]) - 1
+        optimalTime = queues[-1][-1] - 1
 
     return integerToTime(optimalTime)
 
 
 # HH:MM(string) to minute(integer):
-def timeToInteger(time):
-    hour = int(time[0:2])
-    minute = int(time[3:5])
+def timeToInteger(string):
+    hour = int(string[0:2])
+    minute = int(string[3:5])
 
     return hour * 60 + minute
 
+# minute(integer to HH:MM)
 def integerToTime(integer):
-    hour = str(integer / 60)
+    hour = str(int(integer / 60))
     minute = str(integer % 60)
     
     time = hour + ":" + minute
