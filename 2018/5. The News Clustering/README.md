@@ -1,5 +1,5 @@
 # 5. The News Clustering
-It is difficult to find the article which is looked for as there are a great number of articles whose names are similar from lots of press companies. Tube the new crew in the development team of Daum news is making the improvement of searching news articles for users.
+It is difficult to find the article which is looked for as there are a great number of articles whose names are similar from lots of press companies. Tube, the new crew in the development team of Daum news, is making the improvement of searching news articles for users.
 
 To check the trend, Tube searched the articles about "KAKAO Programmer Recruitment".
 
