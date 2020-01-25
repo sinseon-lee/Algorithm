@@ -1,14 +1,14 @@
+# get the Jaccard Similarity of give two strings
 def similarity(str1, str2):
     str1 = str1.lower()
     str2 = str2.lower()
-    str1Alphabet = ""
-    str2Alphabet= ""
 
     alphabetList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
     set1 = []
     set2 = []
 
+    # make the multisets of each strings
     for i in range(len(str1) - 1):
         if (str1[0] in alphabetList and str1[1] in alphabetList):
             set1.append(str1[:2])
@@ -20,8 +20,10 @@ def similarity(str1, str2):
     
     intersection = []
     union = []
+    # get the intersection and the union of two multisets
     while (len(set1) != 0):
         element = set1[0]
+
         if (element in set2):
             intersection.append(element)
             union.append(element)
@@ -33,6 +35,7 @@ def similarity(str1, str2):
     
     while (len(set2) !=0):
         element = set2[0]
+
         union.append(element)
         set2.remove(element)
 
@@ -41,11 +44,7 @@ def similarity(str1, str2):
     else:
         jaccardSimilarity = int(len(intersection) / len(union) * 65536)
 
-
-
     return jaccardSimilarity
-
-
 
 # Test 1
 str1 = "FRANCE"

@@ -11,3 +11,6 @@
 
 4. The Shuttle
 - python 3.7.4 : Clear on Jan 24 2020
+
+5. The News Clustering
+- python 3.7.4 : Clear on Jan 25 2020
