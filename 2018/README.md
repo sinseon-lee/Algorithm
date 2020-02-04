@@ -14,3 +14,6 @@
 
 5. The News Clustering
 - python 3.7.4 : Clear on Jan 25 2020
+
+6. The Friends 4 Blocks
+- python 3.7.4 : Clear on Feb 4 2020
