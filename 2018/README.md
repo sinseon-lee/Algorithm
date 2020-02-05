@@ -17,3 +17,6 @@
 
 6. The Friends 4 Blocks
 - python 3.7.4 : Clear on Feb 4 2020
+
+7. The Chuseok Traffic
+- python 3.7.4 : Clear on Feb 5 2020
