@@ -1,4 +1,4 @@
-# 6. The Friends 4 Blocks
+# 7. The Chuseok Traffic
 Apeach is considering increasing servers for Chuseok without having the system error. To decide it, Apeach is trying to analyze log data on 15th of September, the last Chuseok, and calculate the maximum capacity for one second. It means the maximum number of treating requests during any 1 second(1,000 milliseconds).
 
 ## input
